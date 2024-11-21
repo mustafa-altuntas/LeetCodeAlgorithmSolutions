@@ -35,6 +35,13 @@ int GetSum(int a, int b)
 }
 
 
+int GetSum2(int a, int b)
+{
+    var hourA = TimeSpan.FromHours(a);
+    var hourB = TimeSpan.FromHours(b);
+    var sum = hourA.Add(hourB).TotalHours;
+    return (int)sum;
+}
 
 
 
